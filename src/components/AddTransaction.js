@@ -46,6 +46,7 @@ export const AddTransaction = () => {
         style={{ backgroundColor: "purple", color: "white" }}
         className="w-100 mb-3"
         type="submit"
+        disabled={text !== "" && amount !== 0 ? false : true}
       >
         Add Transaction
       </Button>
